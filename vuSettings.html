@@ -1,0 +1,78 @@
+<!--
+ Title: 
+ File Location: GSNet/
+ 
+ Notes:
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>V.U. - Settings</title>
+  <link rel="icon" href="file:///C:/Users/User/Desktop/GSNet/CommonResources/Images/logoIcon.png">
+  <link rel="stylesheet" href="vuSettings.css">
+  <script src="vuSettings.js"></script>
+
+</head>
+
+<body>
+
+<div id="headerArea">
+ <ul>
+  <li><a href="vuHome.html">Home</a></li>
+  <li><a href="vuProfile.html">Profile</a></li>
+  <li><a href="vuClassroom.html">Class</a></li>
+  <li><a href="vuGameroom.html">Games</a></li> 
+  
+  <li id="settingsButton"><a href="vuSettings.html">Settings</a></li>
+ </ul>
+ 
+</div>
+
+
+<div id="themeSettingsArea"> 
+ <div id="">
+  <h2>Theme</h2>
+  
+  <h3>Backgrounds</h3>
+  <p>Profile background: </p><input placeholder="pick background"> 
+  <p>General background: </p><input placeholder="pick background"> 
+  
+  <h3>Colors</h3>
+  <form action="">
+  <input type="radio" name="colorTheme" value="male">Day<br>
+  <input type="radio" name="colorTheme" value="female">Night<br>
+  <input type="radio" name="colorTheme" value="other"> Ocean<br>
+  <button type="button" onclick="updateThemeSettings()" class="applyButton">Apply Theme Settings</button>
+  </form>
+ </div>
+</div>
+
+<div id="profileSettingsArea">
+ <h2>Profile</h2>
+ 
+ <h3>Category 2</h3>
+ <input type="radio" name="colorTheme" value="male" id="myReadio" value="day">Option 1<br>
+  <input type="radio" name="colorTheme" value="female">Option 2<br>
+  <input type="radio" name="colorTheme" value="other">Option 3<br>
+  <button type="button" onclick="updateProfileSettings()" class="applyButton">Apply Profile Settings</button>
+</div>
+
+<div id="securitySettingsArea">
+ <h2>Security</h2>
+ 
+ <h3>Category 1</h3>
+ <input type="radio" name="colorTheme" value="male">Option 1<br>
+  <input type="radio" name="colorTheme" value="female">Option 2<br>
+  <input type="radio" name="colorTheme" value="other">Option 3<br>
+  <button type="button" onclick="updateSecuritySettings()" class="applyButton">Apply Security Settings</button>
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,125 @@
+<!--
+ Title: 
+ File Location: GSNet/
+ 
+ Notes:
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Virtual University</title>
+  <link rel="icon" href="file:///C:/Users/User/Desktop/GSNet/CommonResources/Images/logoIcon.png">
+  <link rel="stylesheet" href="vuClassroom.css">
+</head>
+
+<body>
+
+<div id="headerArea">
+ <ul>
+  <li><a href="vuHome.html">Home</a></li>
+  <li><a href="vuProfile.html">Profile</a></li>
+  <li><a href="vuClassroom.html">Class</a></li>
+  <li><a href="vuGameroom.html">Games</a></li> 
+  
+  <li id="settingsButton"><a href="vuSettings.html">Settings</a></li>
+ </ul>
+</div>
+
+<div id="mediaArea"> 
+ <div id="mediaScreenArea">
+  <img src="Images/lotusLogoColored.png"  height="100%" width="100%">
+ </div>
+ 
+ <div id="mediaStatsArea">
+  <ul>
+  <li>Views</li>
+  <li><a href="">Rating</a></li>
+  <li><a href="">Share</a></li>
+ </ul>
+ </div>
+</div>
+
+<div id="playlistArea">
+  <div id="channelSelectionArea">
+  <h3>Classrooms / Sort By</h3>  
+  <select name="Sort By">
+   <option value="dateNewToOld">Date(new-old)</option>
+   <option value="dateOldToNew">Date (old-new)</option>
+   <option value="nameAsc">Name(ascending)</option>
+   <option value="nameDesc">Name(descending)</option>
+  </select>
+  <input type="text" id="myInput" onkeyup="sortChannels()" placeholder="Search for classrooms..">
+ </div>
+ <div class="playlistItemContainer">
+ 
+  <div class="playlistItem">
+   
+   <img src="Images/lotusLogoColored.png"  height="50" width="50">
+  </div>
+ </div>
+ 
+ <div id="seriesSelectionArea">
+  <h3>Classes / Sort By</h3>
+  <select name="Sort By">
+   <option value="dateNewToOld">Date(new-old)</option>
+   <option value="dateOldToNew">Date (old-new)</option>
+   <option value="nameAsc">Name(ascending)</option>
+   <option value="nameDesc">Name(descending)</option>
+  </select>
+  <input type="text" id="myInput" onkeyup="sortSeries()" placeholder="Search for classes..">
+ </div>
+ <div class="playlistItemContainer">
+ 
+  <div class="playlistItem">
+   
+   <img src="Images/lotusLogoColored.png"  height="50" width="50">
+  </div>
+  
+  <div class="playlistItem">
+   
+   <img src="Images/lotusLogoColored.png"  height="50" width="50">
+  </div>
+ </div>
+ 
+ 
+ <div id="fileSelectionArea">
+  <h3>Files / Sort By </h3>
+  <select name="Sort By">
+   <option value="dateNewToOld">Date(new-old)</option>
+   <option value="dateOldToNew">Date (old-new)</option>
+   <option value="nameAsc">Name(ascending)</option>
+   <option value="nameDesc">Name(descending)</option>
+  </select>
+  <input type="text" id="myInput" onkeyup="sortFiles()" placeholder="Search for files..">
+ </div>
+ <div class="playlistItemContainer">
+ 
+  <div class="playlistItem">
+   <img src="Images/lotusLogoColored.png"  height="50px" width="50px">
+  </div>
+ </div>
+</div>
+
+<div id="commentsArea">
+  <p>Comments area</p>
+</div>
+
+<div id="chatArea">
+ <div id="chatRoomBox">
+  <p>Welcome!</p>
+ </div>
+ 
+ <div id="chatInputBox">
+  <textarea id="chatTypeBox" placeholder="Input Text"></textarea>
+  <button type="button" id="chatSendButton" onclick="sendChatInput()">Send</button>
+ </div> 
+</div>
+</body>
+</html>
+
+
+
